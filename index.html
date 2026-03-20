@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
@@ -93,7 +92,7 @@
             <!-- 遠處山頂積雪 -->
             <path d="M 60 190 L 100 150 L 140 190 Q 100 180 60 190 M 350 150 L 400 100 L 450 150 Q 400 140 350 150 M 700 170 L 750 120 L 800 170 Q 750 160 700 170 M 1050 180 L 1100 130 L 1150 180 Q 1100 165 1050 180" fill="#ffffff" opacity="0.6"/>
             
-            <!-- 近處立山連峰主山脈 (原先的藍綠色) -->
+            <!-- 近處立山連峰主山脈 -->
             <path d="M -50 300 L 150 110 L 300 230 L 500 70 L 650 190 L 850 90 L 1050 240 L 1200 110 L 1350 300 Z" fill="#8eb8b8" />
             <!-- 近處山頂積雪 -->
             <path d="M 70 190 L 150 110 L 230 190 Q 190 170 150 200 Q 110 170 70 190 M 380 190 L 500 70 L 620 190 Q 560 150 500 210 Q 440 150 380 190 M 740 200 L 850 90 L 960 200 Q 900 160 850 220 Q 800 160 740 200 M 1130 180 L 1200 110 L 1270 180 Q 1200 160 1130 180" fill="#ffffff" />
@@ -102,26 +101,18 @@
             <path d="M -100 265 L 1350 265" stroke="#a78b83" stroke-width="2" opacity="0.3" />
             <path d="M -100 270 L 1350 270" stroke="#a78b83" stroke-width="1" opacity="0.4" stroke-dasharray="15 10" />
             
-            <!-- 復古可愛電車 (兩節車廂)放大1.3倍 -->
+            <!-- 復古可愛電車 -->
             <g transform="translate(800, 233) scale(1.3)">
-                <!-- 連結器 -->
                 <rect x="-15" y="12" width="15" height="4" fill="#a78b83" opacity="0.8" />
-                
-                <!-- 第一節車廂 (右側車頭) -->
                 <rect x="0" y="0" width="100" height="24" rx="4" fill="#ffb3c1" />
                 <rect x="0" y="16" width="100" height="3" fill="#ff758f" opacity="0.8" />
-                <!-- 窗戶 -->
                 <rect x="8" y="5" width="14" height="8" rx="2" fill="#ffffff" />
                 <rect x="28" y="5" width="14" height="8" rx="2" fill="#ffffff" />
                 <rect x="48" y="5" width="14" height="8" rx="2" fill="#ffffff" />
-                <rect x="68" y="5" width="22" height="8" rx="2" fill="#ffffff" /> <!-- 駕駛座寬窗 -->
-                <!-- 車頭燈 -->
+                <rect x="68" y="5" width="22" height="8" rx="2" fill="#ffffff" /> 
                 <circle cx="95" cy="20" r="2.5" fill="#ffd3b6" />
-                
-                <!-- 第二節車廂 -->
                 <rect x="-115" y="0" width="100" height="24" rx="4" fill="#ffb3c1" />
                 <rect x="-115" y="16" width="100" height="3" fill="#ff758f" opacity="0.8" />
-                <!-- 窗戶 -->
                 <rect x="-105" y="5" width="22" height="8" rx="2" fill="#ffffff" />
                 <rect x="-77" y="5" width="14" height="8" rx="2" fill="#ffffff" />
                 <rect x="-57" y="5" width="14" height="8" rx="2" fill="#ffffff" />
@@ -138,22 +129,14 @@
             <svg viewBox="0 0 200 120" class="w-[160px] md:w-[220px] h-auto" preserveAspectRatio="xMidYMax meet">
                 <!-- 典雅夕陽背景 -->
                 <circle cx="100" cy="80" r="35" fill="rgba(255, 255, 255, 0.2)" />
-                
-                <!-- 神社鳥居主體 (半透明白) -->
+                <!-- 神社鳥居主體 -->
                 <g fill="rgba(255, 255, 255, 0.5)">
-                    <!-- 左柱 -->
                     <polygon points="55,120 67,120 63,30 53,30" />
-                    <!-- 右柱 -->
                     <polygon points="145,120 133,120 137,30 147,30" />
-                    <!-- 最上層橫梁 (笠木) 帶有微微上翹 -->
                     <path d="M 20,30 Q 100,20 180,30 L 180,36 Q 100,26 20,36 Z" />
-                    <!-- 第二層橫梁 (島木) -->
                     <rect x="40" y="36" width="120" height="5" />
-                    <!-- 貫 (中層穿透柱子的橫梁) -->
                     <rect x="30" y="65" width="140" height="7" />
-                    <!-- 額束 (中間的小直柱) -->
                     <rect x="94" y="41" width="12" height="24" />
-                    <!-- 底座 -->
                     <rect x="45" y="110" width="30" height="10" rx="3" />
                     <rect x="125" y="110" width="30" height="10" rx="3" />
                 </g>
@@ -198,11 +181,20 @@
     </div>
 
     <!-- Main Content Area -->
-    <main class="max-w-4xl mx-auto px-4 py-6 pb-20">
+    <main class="max-w-4xl mx-auto px-4 py-6 pb-24">
 
         <!-- ================= 行前準備與清單 ================= -->
         <div id="prep" class="tab-content hidden animate-[fadeIn_0.3s_ease-in-out]">
             <h2 class="text-xl font-bold text-peach-500 mb-4 flex items-center"><i class="fas fa-suitcase-rolling mr-2 text-rose-main"></i> 行前核心攻略 Checklist</h2>
+            
+            <!-- 舊鞋淘汰策略 -->
+            <div class="bg-rose-50 p-5 rounded-2xl shadow-sm border border-rose-200 mb-6 info-card relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-rose-200 text-rose-800 text-xs px-3 py-1 rounded-bl-lg font-bold">小撇步</div>
+                <div class="text-rose-900 font-bold mb-2 flex items-center text-lg"><i class="fas fa-shoe-prints mr-2 text-rose-500"></i> D2 舊鞋淘汰策略 🌟🌟🌟🌟🌟</div>
+                <p class="text-sm text-rose-800 leading-relaxed mb-2">建議 D2 出發時穿一雙準備汰換的舊鞋，在銀座或原宿買到新鞋後，直接請店家幫忙回收（日本多數鞋店提供此服務）。</p>
+                <p class="text-sm text-rose-800 leading-relaxed">或者裝袋放進 Bic Camera 的寄物櫃，減輕當天負重，優雅換新鞋！</p>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <div class="bg-white p-5 rounded-2xl shadow-sm border border-peach-100 info-card">
                     <div class="text-rose-deep font-semibold mb-2"><i class="fas fa-utensils mr-2"></i>餐廳預約</div>
@@ -215,7 +207,7 @@
                         <div class="bg-blue-50 p-3 rounded-xl border-l-4 border-blue-400">
                             <span class="text-xs text-blue-500 font-bold block mb-1">D6 (4/12) 12:00</span>
                             <span class="font-bold text-gray-800">Le Bretagne 神樂坂店</span>
-                            <span class="text-xs text-gray-600 block mt-1">建議提早 1-2 週官網預約 (週日現場等候極長)</span>
+                            <span class="text-xs text-gray-600 block mt-1">建議提早 1-2 週官網預約 (週日現場極長)</span>
                         </div>
                     </div>
                 </div>
@@ -239,26 +231,12 @@
                     </div>
                 </div>
             </div>
-
-            <h2 class="text-xl font-bold text-peach-500 mb-4 flex items-center mt-8"><i class="fas fa-truck mr-2 text-rose-main"></i> 行李宅配筆記</h2>
-            <div class="bg-white p-5 rounded-2xl shadow-sm border border-peach-100 info-card">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="bg-gray-50 p-4 rounded-xl">
-                        <div class="font-bold text-gray-700 mb-2"><i class="fas fa-box text-orange-500 mr-1"></i> 行李宅急便</div>
-                        <p class="text-sm text-gray-600 leading-relaxed">4/9 寄出、4/11 到達。<br><br><span class="text-xs bg-gray-200 px-2 py-1 rounded">寄件地址：〒103-0013 東京都中央区日本橋人形町 3-3-16 (日本橋賽博酒店 Hotel Saibo)</span></p>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-xl">
-                        <div class="font-bold text-gray-700 mb-2"><i class="fas fa-plane text-cyan-500 mr-1"></i> ANA 國內線</div>
-                        <p class="text-sm text-gray-600 leading-relaxed">提早 1 小時到機場即可。使用 QR Code 登機極快，無需過早抵達等候。</p>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!-- ================= 4/7 行程 ================= -->
         <div id="d-4-7" class="tab-content block animate-[fadeIn_0.3s_ease-in-out]">
             <div class="flex items-center justify-between mb-6">
-                <h2 class="text-2xl font-bold text-gray-800">4/7 (二) <span class="text-lg font-normal text-gray-500 ml-2">抵達東京：江戶風情</span></h2>
+                <h2 class="text-2xl font-bold text-gray-800">4/7 (二) <span class="text-lg font-normal text-gray-500 ml-2">抵達東京：江戶風情夜櫻</span></h2>
             </div>
             
             <div class="border-l-2 border-rose-200 ml-4 md:ml-8 space-y-8 py-2 mb-8">
@@ -269,7 +247,7 @@
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
                         <span class="text-xs font-bold text-cyan-700 bg-cyan-50 px-2 py-1 rounded mb-2 inline-block">13:30 - 17:45</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">搭機抵達東京</div>
+                        <div class="font-bold text-gray-800 text-lg mb-1">抵達東京</div>
                         <div class="text-sm text-gray-500">ANA 航空：台北松山 (TSA) ✈️ 東京羽田 (HND)</div>
                     </div>
                 </div>
@@ -280,41 +258,56 @@
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
                         <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded mb-2 inline-block">晚上</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">抵達飯店 KOKO HOTEL Asakusa Komagata</div>
-                        <div class="text-sm text-rose-500 mt-1"><i class="fas fa-info-circle"></i> 記得跟櫃台索取行李宅配單！</div>
+                        <div class="font-bold text-gray-800 text-lg mb-1">入住 KOKO HOTEL Asakusa Komagata</div>
+                        <div class="text-sm text-rose-500 mt-1"><i class="fas fa-info-circle"></i> Check-in 並記得跟櫃台索取行李宅配單！</div>
                     </div>
                 </div>
 
                 <div class="relative pl-8 md:pl-12">
                     <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-rose-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-rose-500 z-10">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-rose-700 bg-rose-50 px-2 py-1 rounded mb-2 inline-block">晚上</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">淺草寺參拜</div>
-                        <div class="text-sm text-gray-500">感受下町風情與夜間點燈</div>
-                    </div>
-                </div>
-
-                <div class="relative pl-8 md:pl-12">
-                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-purple-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-purple-500 z-10">
                         <i class="fas fa-moon"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-purple-700 bg-purple-50 px-2 py-1 rounded mb-2 inline-block">晚上</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">隅田川散步</div>
-                        <div class="text-sm text-gray-500">欣賞晴空塔浪漫夜景</div>
+                        <span class="text-xs font-bold text-rose-700 bg-rose-50 px-2 py-1 rounded mb-2 inline-block">晚上行程</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">淺草寺 ➔ 隅田川步道</div>
+                        <div class="text-sm text-gray-500">漫步感受江戶風情與浪漫的夜櫻點燈</div>
                     </div>
                 </div>
 
                 <div class="relative pl-8 md:pl-12">
-                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-indigo-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-indigo-500 z-10">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-orange-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-orange-500 z-10">
                         <i class="fas fa-utensils"></i>
                     </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card bg-rose-50/20">
-                        <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2 py-1 rounded mb-2 inline-block">晚餐</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">淺草今半</div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
+                        <span class="text-xs font-bold text-orange-700 bg-orange-50 px-2 py-1 rounded mb-2 inline-block">晚餐</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">淺草今半 (國際通本店)</div>
                         <div class="text-sm text-gray-500">壽喜燒 / 全熟食 / 經典江戶味</div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-pink-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-pink-600 z-10">
+                        <i class="fas fa-ice-cream"></i>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
+                        <span class="text-xs font-bold text-pink-700 bg-pink-50 px-2 py-1 rounded mb-2 inline-block">甜點</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">淺草絲綢布丁</div>
+                        <div class="text-sm text-gray-500">解鎖在地超人氣絲滑甜點</div>
+                    </div>
+                </div>
+
+                <!-- 超市補給卡片 -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-green-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-green-600 z-10 shadow-sm">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="bg-green-50 p-5 rounded-xl shadow-sm border border-green-200 info-card">
+                        <span class="text-xs font-bold text-green-800 bg-green-200 px-2 py-1 rounded mb-2 inline-block">🛒 20:30 - 21:15 最後一站</span>
+                        <div class="font-bold text-green-900 text-lg mb-1 flex items-center">超市補給 (LIFE 淺草店) <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="space-y-2 text-sm text-green-800 mt-2">
+                            <p><i class="fas fa-route mr-1 text-green-600"></i> <strong>動線：</strong> 從今半步行 5-7 分鐘。這是一家大型複合超市，水果、飲料、零食區非常完整。</p>
+                            <p><i class="fas fa-check-circle mr-1 text-green-600"></i> <strong>慢活清單：</strong> 當季草莓、瓶裝水、明治優格、在地零食。買完步行 5 分鐘回飯店。</p>
+                        </div>
                     </div>
                 </div>
 
@@ -324,9 +317,14 @@
         <!-- ================= 4/8 行程 ================= -->
         <div id="d-4-8" class="tab-content hidden animate-[fadeIn_0.3s_ease-in-out]">
             <div class="flex items-center justify-between mb-6">
-                <h2 class="text-2xl font-bold text-gray-800">4/8 (三) <span class="text-lg font-normal text-gray-500 ml-2">淺草慵懶早晨 & 澀谷燒肉採購</span></h2>
+                <h2 class="text-2xl font-bold text-gray-800">4/8 (三) <span class="text-lg font-normal text-gray-500 ml-2">買了就穿！銀座與澀谷雙區採購</span></h2>
             </div>
             
+            <div class="bg-orange-50 text-orange-800 p-3 rounded-lg text-sm font-medium mb-6 border border-orange-200 shadow-sm flex items-center">
+                <i class="fas fa-lightbulb text-orange-500 mr-2 text-lg"></i>
+                今天雖然較忙但意義重大：平日下午完成銀座與原宿採購，避開週末人潮，享受絕佳試穿品質！
+            </div>
+
             <div class="border-l-2 border-rose-200 ml-4 md:ml-8 space-y-8 py-2 mb-8">
                 
                 <div class="relative pl-8 md:pl-12">
@@ -334,69 +332,136 @@
                         <i class="fas fa-coffee"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-yellow-700 bg-yellow-50 px-2 py-1 rounded mb-2 inline-block">08:30 早餐</span>
+                        <span class="text-xs font-bold text-yellow-700 bg-yellow-50 px-2 py-1 rounded mb-2 inline-block">早餐</span>
                         <div class="font-bold text-gray-800 text-lg mb-1">FEBRUARY CAFE</div>
-                        <div class="text-sm text-gray-500">享用知名 Pelican 吐司</div>
+                        <div class="text-sm text-gray-500">享用質感吐司開啟早晨</div>
                     </div>
                 </div>
                 
                 <div class="relative pl-8 md:pl-12">
-                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-blue-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-blue-500 z-10">
-                        <i class="fas fa-store"></i>
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-pink-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-pink-500 z-10">
+                        <i class="fab fa-pagelines"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded mb-2 inline-block">10:00 上午</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">雷門 / 仲見世通</div>
-                        <div class="text-sm text-gray-500">逛名產店與傳統街道</div>
+                        <span class="text-xs font-bold text-pink-700 bg-pink-50 px-2 py-1 rounded mb-2 inline-block">上午行程</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">隅田公園櫻吹雪漫步</div>
+                        <div class="text-sm text-gray-500">沐浴在浪漫的櫻花雨中</div>
                     </div>
                 </div>
 
                 <div class="relative pl-8 md:pl-12">
-                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-cyan-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-cyan-600 z-10">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-blue-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-blue-600 z-10">
                         <i class="fas fa-subway"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-cyan-700 bg-cyan-50 px-2 py-1 rounded mb-2 inline-block">12:45 交通</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">搭乘銀座線</div>
-                        <div class="text-sm text-gray-500">一線直達澀谷，輕鬆移動</div>
-                    </div>
-                </div>
-
-                <div class="relative pl-8 md:pl-12">
-                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-orange-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-orange-500 z-10">
-                        <i class="fas fa-fire"></i>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card bg-orange-50/20">
-                        <span class="text-xs font-bold text-orange-700 bg-orange-50 px-2 py-1 rounded mb-2 inline-block">13:30 午餐</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">Beef Kitchen <span class="text-xs bg-rose-100 text-rose-600 px-2 py-0.5 rounded ml-1 font-normal">已預約</span></div>
-                        <div class="text-sm text-gray-500">澀谷高質感人氣燒肉</div>
+                        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded mb-2 inline-block">移動</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">淺草站 ➔ 銀座站</div>
+                        <div class="text-sm text-gray-500">搭乘銀座線直達，輕鬆轉換陣地</div>
                     </div>
                 </div>
 
                 <div class="relative pl-8 md:pl-12">
                     <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-rose-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-rose-500 z-10">
+                        <i class="fas fa-shoe-prints"></i>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
+                        <span class="text-xs font-bold text-rose-700 bg-rose-50 px-2 py-1 rounded mb-2 inline-block">12:00 下午</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1 flex items-center">銀座 On 旗艦店 <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="text-sm text-rose-600 font-medium mt-1">買了就穿！請店員回收舊鞋或鎖入置物櫃。</div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-orange-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-orange-500 z-10">
                         <i class="fas fa-shopping-bag"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-rose-700 bg-rose-50 px-2 py-1 rounded mb-2 inline-block">下午</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">澀谷採買時光</div>
-                        <div class="text-sm text-gray-500 mt-1">
-                            <span class="inline-block bg-gray-100 rounded px-2 py-0.5 text-xs mr-1 mb-1">Bic Camera</span>
-                            <span class="inline-block bg-gray-100 rounded px-2 py-0.5 text-xs mr-1 mb-1">3coins</span>
-                            <span class="inline-block bg-gray-100 rounded px-2 py-0.5 text-xs">日系服飾</span>
+                        <span class="text-xs font-bold text-orange-700 bg-orange-50 px-2 py-1 rounded mb-2 inline-block">13:30 下午</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">銀座質感漫步 ➔ 木村家</div>
+                        <div class="text-sm text-gray-500">外帶木村家酒種紅豆麵包 (⚠️ 備案早餐)</div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-blue-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-blue-600 z-10">
+                        <i class="fas fa-subway"></i>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
+                        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded mb-2 inline-block">移動</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">銀座站 ➔ 澀谷站</div>
+                        <div class="text-sm text-gray-500">搭乘銀座線直達澀谷</div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-red-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-red-500 z-10">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card bg-red-50/20">
+                        <span class="text-xs font-bold text-red-700 bg-red-50 px-2 py-1 rounded mb-2 inline-block">13:30 / 15:00 午餐</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">Beef Kitchen <span class="text-sm font-normal text-gray-500 mx-1">或</span> 利久牛舌</div>
+                        <div class="text-sm text-gray-500">
+                            (依預約) 13:30 Beef Kitchen 澀谷店<br>
+                            (或順路) 15:00 利久牛舌 Shibuya Hikarie 店 (全熟食)
                         </div>
                     </div>
                 </div>
 
-                <!-- 核心任務卡片 -->
                 <div class="relative pl-8 md:pl-12">
-                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-red-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-red-500 z-10">
-                        <i class="fas fa-exclamation"></i>
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-cyan-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-cyan-600 z-10">
+                        <i class="fas fa-camera"></i>
                     </div>
-                    <div class="bg-red-50 p-5 rounded-xl shadow-sm border border-red-100 info-card">
-                        <span class="text-xs font-bold text-red-700 bg-red-100 px-2 py-1 rounded mb-2 inline-block">⚠️ 核心任務</span>
-                        <div class="font-bold text-red-800 text-lg mb-1">購買 俺のBakery 生吐司</div>
-                        <div class="text-sm text-red-600">下午離開澀谷前，順路去 Shibuya Tokyu Foodshow B1 買好，作為 D3 的美味早餐！</div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
+                        <span class="text-xs font-bold text-cyan-700 bg-cyan-50 px-2 py-1 rounded mb-2 inline-block">16:00 下午</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">Bic Camera ➔ 原宿明治通</div>
+                        <div class="text-sm text-gray-500">電器補給，再到原宿繼續看潮流鞋</div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-pink-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-pink-600 z-10">
+                        <i class="fas fa-ice-cream"></i>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
+                        <span class="text-xs font-bold text-pink-700 bg-pink-50 px-2 py-1 rounded mb-2 inline-block">晚間甜點</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">澀谷 西村水果聖代</div>
+                        <div class="text-sm text-gray-500">購物後的新鮮水果治癒</div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-yellow-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-yellow-600 z-10">
+                        <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
+                        <span class="text-xs font-bold text-yellow-700 bg-yellow-50 px-2 py-1 rounded mb-2 inline-block">19:00 晚間採買</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">俺之Bakery 生吐司</div>
+                        <div class="text-sm text-gray-500">位於東急 Foodshow。💡 負重策略：最後才拿！</div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-blue-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-blue-600 z-10">
+                        <i class="fas fa-train"></i>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
+                        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded mb-2 inline-block">移動</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">搭車回淺草</div>
+                    </div>
+                </div>
+
+                <!-- 超市補給卡片 -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-green-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-green-600 z-10 shadow-sm">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="bg-green-50 p-5 rounded-xl shadow-sm border border-green-200 info-card">
+                        <span class="text-xs font-bold text-green-800 bg-green-200 px-2 py-1 rounded mb-2 inline-block">🛒 20:30 最後一站</span>
+                        <div class="font-bold text-green-900 text-lg mb-1 flex items-center">超市補給 (Maruetsu Petit 淺草店) <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="space-y-2 text-sm text-green-800 mt-2">
+                            <p><i class="fas fa-route mr-1 text-green-600"></i> <strong>動線：</strong> 位於淺草飯店附近，是一家便利型超市，適合補給飲料與少量水果。</p>
+                            <p><i class="fas fa-key mr-1 text-green-600"></i> <strong>關鍵：</strong> 今天體力消耗大，超市行程排在最後，快速補給後立刻回飯店休息。</p>
+                        </div>
                     </div>
                 </div>
 
@@ -406,41 +471,33 @@
         <!-- ================= 4/9 行程 ================= -->
         <div id="d-4-9" class="tab-content hidden animate-[fadeIn_0.3s_ease-in-out]">
             <div class="flex items-center justify-between mb-4">
-                <h2 class="text-2xl font-bold text-gray-800">4/9 (四) <span class="text-lg font-normal text-gray-500 ml-2">飛往金澤 (行李宅配日)</span></h2>
+                <h2 class="text-2xl font-bold text-gray-800">4/9 (四) <span class="text-lg font-normal text-gray-500 ml-2">飛金澤：長町武家屋敷 ➔ 溫泉第一泡</span></h2>
             </div>
             
             <div class="border-l-2 border-rose-200 ml-4 md:ml-8 space-y-8 py-2 mb-8">
                 
                 <div class="relative pl-8 md:pl-12">
-                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-blue-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-blue-600 z-10">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-rose-200 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-rose-600 z-10">
                         <i class="fas fa-box"></i>
                     </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-blue-100 info-card bg-blue-50/30">
-                        <span class="text-xs font-bold text-blue-700 bg-blue-100 px-2 py-1 rounded mb-2 inline-block">07:00 重點任務</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">退房與行李宅配</div>
-                        <div class="text-sm text-gray-600">Check-out 並將大行李寄至日本橋飯店</div>
+                    <div class="bg-rose-50 p-5 rounded-xl shadow-sm border border-rose-200 info-card">
+                        <span class="text-xs font-bold text-rose-800 bg-rose-200 px-2 py-1 rounded mb-2 inline-block">07:20 重點任務</span>
+                        <div class="font-bold text-rose-900 text-lg mb-1 flex items-center">辦理大行李宅配 <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="text-sm text-rose-800">在飯店櫃台將大行李寄至 D5 日本橋飯店，輕裝赴機場</div>
                     </div>
                 </div>
 
                 <div class="relative pl-8 md:pl-12">
-                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-yellow-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-yellow-600 z-10">
-                        <i class="fas fa-bread-slice"></i>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-yellow-700 bg-yellow-50 px-2 py-1 rounded mb-2 inline-block">早餐</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">俺のBakery 生吐司</div>
-                        <div class="text-sm text-gray-500">享用昨日澀谷買好的高級生吐司</div>
-                    </div>
-                </div>
-
-                <div class="relative pl-8 md:pl-12">
-                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-cyan-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-cyan-500 z-10">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-cyan-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-cyan-600 z-10">
                         <i class="fas fa-plane"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-cyan-700 bg-cyan-50 px-2 py-1 rounded mb-2 inline-block">07:30 - 10:45</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">前往羽田搭機赴金澤</div>
-                        <div class="text-sm text-gray-500">07:30 往羽田機場 ➔ 09:45 搭乘 ANA 國內線 ➔ 10:45 抵達小松轉車至金澤</div>
+                        <span class="text-xs font-bold text-cyan-700 bg-cyan-50 px-2 py-1 rounded mb-2 inline-block">交通與航班</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">淺草 ➔ 羽田 ➔ 金澤</div>
+                        <div class="text-sm text-gray-500">
+                            07:49 淺草站 (都營直通) ➔ 羽田機場<br>
+                            09:45 搭乘 ANA 國內線飛往金澤 (小松)
+                        </div>
                     </div>
                 </div>
 
@@ -451,29 +508,29 @@
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
                         <span class="text-xs font-bold text-orange-700 bg-orange-50 px-2 py-1 rounded mb-2 inline-block">午餐</span>
                         <div class="font-bold text-gray-800 text-lg mb-1">富金豚</div>
-                        <div class="text-sm text-gray-500">品嚐厚切炸能登豬排，酥脆多汁</div>
+                        <div class="text-sm text-gray-500">品嚐能登豬排 (全熟食)</div>
                     </div>
                 </div>
 
                 <div class="relative pl-8 md:pl-12">
                     <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-rose-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-rose-500 z-10">
-                        <i class="fas fa-camera"></i>
+                        <i class="fas fa-shoe-prints"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-rose-700 bg-rose-50 px-2 py-1 rounded mb-2 inline-block">下午</span>
+                        <span class="text-xs font-bold text-rose-700 bg-rose-50 px-2 py-1 rounded mb-2 inline-block">下午行程</span>
                         <div class="font-bold text-gray-800 text-lg mb-1">長町武家屋敷散步</div>
-                        <div class="text-sm text-gray-500">漫步古色古香的武士宅邸街道</div>
+                        <div class="text-sm text-gray-500">穿著新買的美鞋，漫步綠意與粉櫻之間</div>
                     </div>
                 </div>
 
                 <div class="relative pl-8 md:pl-12">
-                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-blue-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-blue-500 z-10">
-                        <i class="fas fa-hotel"></i>
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-pink-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-pink-600 z-10">
+                        <i class="fas fa-cookie-bite"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded mb-2 inline-block">傍晚</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">入住 Hotel Vista Kanazawa</div>
-                        <div class="text-sm text-gray-500">辦理入住，稍作休息</div>
+                        <span class="text-xs font-bold text-pink-700 bg-pink-50 px-2 py-1 rounded mb-2 inline-block">甜點</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1 flex items-center">菓舖 KAZUNAKASHIMA <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="text-sm text-gray-500">享受高質感的日式和菓子</div>
                     </div>
                 </div>
 
@@ -482,9 +539,35 @@
                         <i class="fas fa-beer"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card bg-rose-50/20">
-                        <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2 py-1 rounded mb-2 inline-block">晚餐</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">居酒屋 大名</div>
-                        <div class="text-sm text-gray-500">點烤魚、揚物等熟食，深度體驗在地氛圍</div>
+                        <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2 py-1 rounded mb-2 inline-block">18:00 晚餐</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1 flex items-center">居酒屋 大名 <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="text-sm text-gray-500">提前用餐，點烤魚、揚物等熟食，體驗在地氛圍</div>
+                    </div>
+                </div>
+
+                <!-- 超市補給卡片 -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-green-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-green-600 z-10 shadow-sm">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="bg-green-50 p-5 rounded-xl shadow-sm border border-green-200 info-card">
+                        <span class="text-xs font-bold text-green-800 bg-green-200 px-2 py-1 rounded mb-2 inline-block">🛒 19:30 - 20:15 最後一站</span>
+                        <div class="font-bold text-green-900 text-lg mb-1">超市補給 (金澤百番街 Agape)</div>
+                        <div class="space-y-2 text-sm text-green-800 mt-2">
+                            <p><i class="fas fa-route mr-1 text-green-600"></i> <strong>動線：</strong> 位於百番街「Anto」名產館內的高質感超市。</p>
+                            <p><i class="fas fa-check-circle mr-1 text-green-600"></i> <strong>慢活清單：</strong> 必買能登牛乳 🌟🌟🌟🌟🌟、棒茶、金澤限定零食。買完直接回飯店。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-red-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-red-500 z-10">
+                        <i class="fas fa-hot-tub"></i>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-red-100 info-card bg-red-50/10">
+                        <span class="text-xs font-bold text-red-700 bg-red-50 px-2 py-1 rounded mb-2 inline-block">20:30 夜間</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1 flex items-center">溫泉第一泡 <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="text-sm text-gray-500">飯店內洗去一天的疲憊，徹底享受</div>
                     </div>
                 </div>
 
@@ -494,41 +577,46 @@
         <!-- ================= 4/10 行程 ================= -->
         <div id="d-4-10" class="tab-content hidden animate-[fadeIn_0.3s_ease-in-out]">
             <div class="flex items-center justify-between mb-6">
-                <h2 class="text-2xl font-bold text-gray-800">4/10 (五) <span class="text-lg font-normal text-gray-500 ml-2">金澤文化與金箔美學</span></h2>
+                <h2 class="text-2xl font-bold text-gray-800">4/10 (五) <span class="text-lg font-normal text-gray-500 ml-2">金澤滿開之巔：核心賞櫻 ➔ 東茶屋街</span></h2>
             </div>
             
+            <div class="bg-pink-50 text-pink-800 p-3 rounded-lg text-sm font-medium mb-6 border border-pink-200 shadow-sm flex items-center">
+                <i class="fab fa-pagelines text-pink-500 mr-2 text-lg"></i>
+                🌸 櫻花 Slow Life：今天不趕路，純粹享受極致的金澤文化、滿開櫻花與美食。
+            </div>
+
             <div class="border-l-2 border-rose-200 ml-4 md:ml-8 space-y-8 py-2 mb-8">
                 
                 <div class="relative pl-8 md:pl-12">
-                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-yellow-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-yellow-600 z-10">
-                        <i class="fas fa-coffee"></i>
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-red-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-red-500 z-10">
+                        <i class="fas fa-hot-tub"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-yellow-700 bg-yellow-50 px-2 py-1 rounded mb-2 inline-block">早晨</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">飯店早餐</div>
-                        <div class="text-sm text-gray-500">在飯店享用早餐，悠閒準備出發</div>
+                        <span class="text-xs font-bold text-red-700 bg-red-50 px-2 py-1 rounded mb-2 inline-block">晨間</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">晨間泡湯</div>
+                        <div class="text-sm text-gray-500">伴隨飯店早餐，悠閒喚醒身體</div>
                     </div>
                 </div>
 
                 <div class="relative pl-8 md:pl-12">
-                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-green-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-green-600 z-10">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-pink-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-pink-600 z-10">
                         <i class="fas fa-tree"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-green-700 bg-green-50 px-2 py-1 rounded mb-2 inline-block">10:00 上午</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">兼六園</div>
-                        <div class="text-sm text-gray-500">日本三大名園之一，欣賞日式庭園之美</div>
+                        <span class="text-xs font-bold text-pink-700 bg-pink-50 px-2 py-1 rounded mb-2 inline-block">09:30 - 12:30 上午</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1 flex items-center">兼六園 ➔ 金澤城 <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="text-sm text-gray-500">核心賞櫻 3 小時，享受滿開巔峰的絕美景致</div>
                     </div>
                 </div>
 
                 <div class="relative pl-8 md:pl-12">
                     <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-orange-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-orange-500 z-10">
-                        <i class="fas fa-utensils"></i>
+                        <i class="fas fa-fish"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-orange-700 bg-orange-50 px-2 py-1 rounded mb-2 inline-block">午餐</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">近江町市場 (熟食攻略)</div>
-                        <div class="text-sm text-gray-500">金澤的廚房，盡情品嚐各式美味熟食</div>
+                        <span class="text-xs font-bold text-orange-700 bg-orange-50 px-2 py-1 rounded mb-2 inline-block">13:00 - 14:30 午餐</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1 flex items-center">近江町市場 <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="text-sm text-gray-500">烤海鮮與熟食攻略 (⚠️ 請準備現鈔)</div>
                     </div>
                 </div>
 
@@ -537,9 +625,9 @@
                         <i class="fas fa-palette"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-rose-700 bg-rose-50 px-2 py-1 rounded mb-2 inline-block">下午</span>
+                        <span class="text-xs font-bold text-rose-700 bg-rose-50 px-2 py-1 rounded mb-2 inline-block">下午行程</span>
                         <div class="font-bold text-gray-800 text-lg mb-1">21 世紀美術館 ➔ 東茶屋街</div>
-                        <div class="text-sm text-gray-500">感受現代藝術後，再漫步至傳統木造茶屋街</div>
+                        <div class="text-sm text-gray-500">感受現代藝術，再漫步至木造茶屋老街</div>
                     </div>
                 </div>
 
@@ -548,9 +636,9 @@
                         <i class="fas fa-mug-hot"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-teal-700 bg-teal-50 px-2 py-1 rounded mb-2 inline-block">下午茶</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">懷華樓</div>
-                        <div class="text-sm text-gray-500">在東茶屋街享用奢華的金箔甜點</div>
+                        <span class="text-xs font-bold text-teal-700 bg-teal-50 px-2 py-1 rounded mb-2 inline-block">甜點</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">懷華樓 / 箔一</div>
+                        <div class="text-sm text-gray-500">品嚐金箔慕斯與金箔冰淇淋</div>
                     </div>
                 </div>
 
@@ -560,8 +648,29 @@
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card bg-rose-50/20">
                         <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2 py-1 rounded mb-2 inline-block">晚餐</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">釜揚げうどん 鈴の家 <span class="text-sm font-normal text-gray-500 mx-1">或</span> Turban Curry 本店</div>
-                        <div class="text-sm text-gray-500">烏龍麵或金澤黑咖哩，隨機安排品嚐</div>
+                        <div class="font-bold text-gray-800 text-lg mb-1 flex items-center">鈴の家 <span class="text-sm font-normal text-gray-500 mx-1">或</span> Turban Curry <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="text-sm text-gray-500">金澤黑咖哩或烏龍麵 (全熟食)</div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-purple-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-purple-600 z-10">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
+                        <span class="text-xs font-bold text-purple-700 bg-purple-50 px-2 py-1 rounded mb-2 inline-block">傍晚</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">東茶屋街伴手禮補貨</div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-red-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-red-500 z-10">
+                        <i class="fas fa-hot-tub"></i>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-red-100 info-card bg-red-50/10">
+                        <span class="text-xs font-bold text-red-700 bg-red-50 px-2 py-1 rounded mb-2 inline-block">20:30 晚間</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">睡前溫泉泡湯</div>
+                        <div class="text-sm text-gray-500">睡前徹底放鬆，為明天充電</div>
                     </div>
                 </div>
 
@@ -571,29 +680,22 @@
         <!-- ================= 4/11 行程 ================= -->
         <div id="d-4-11" class="tab-content hidden animate-[fadeIn_0.3s_ease-in-out]">
             <div class="flex items-center justify-between mb-6">
-                <h2 class="text-2xl font-bold text-gray-800">4/11 (六) <span class="text-lg font-normal text-gray-500 ml-2">金澤車站採買 ➔ 重返東京</span></h2>
+                <h2 class="text-2xl font-bold text-gray-800">4/11 (六) <span class="text-lg font-normal text-gray-500 ml-2">金澤車站火力全開採買 ➔ 重返東京</span></h2>
             </div>
             
             <div class="border-l-2 border-rose-200 ml-4 md:ml-8 space-y-8 py-2 mb-8">
                 
                 <div class="relative pl-8 md:pl-12">
-                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-yellow-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-yellow-600 z-10">
-                        <i class="fas fa-coffee"></i>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-yellow-700 bg-yellow-50 px-2 py-1 rounded mb-2 inline-block">早晨</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">飯店早餐</div>
-                    </div>
-                </div>
-
-                <div class="relative pl-8 md:pl-12">
                     <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-blue-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-blue-500 z-10">
-                        <i class="fas fa-shopping-bag"></i>
+                        <i class="fas fa-shopping-cart"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded mb-2 inline-block">上午</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">金澤車站採購</div>
-                        <div class="text-sm text-gray-500">火力全開，採購金澤精緻伴手禮</div>
+                        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded mb-2 inline-block">10:30 - 13:00 上午</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">車站採買第一彈 (金澤百番街)</div>
+                        <div class="text-sm text-gray-500 mt-1">
+                            <strong>Anto 名產館：</strong><br>
+                            烏雞庵カステラ (蛋糕)、金澤うら田、中田屋きんつば
+                        </div>
                     </div>
                 </div>
 
@@ -602,9 +704,8 @@
                         <i class="fas fa-utensils"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-orange-700 bg-orange-50 px-2 py-1 rounded mb-2 inline-block">午餐</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">金澤車站內 (隨機安排)</div>
-                        <div class="text-sm text-gray-500">能登牛排丼 / 黑關東煮 / 日式定食</div>
+                        <span class="text-xs font-bold text-orange-700 bg-orange-50 px-2 py-1 rounded mb-2 inline-block">13:10 - 14:00 午餐</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">金澤車站隨機 (全熟食)</div>
                     </div>
                 </div>
 
@@ -613,9 +714,9 @@
                         <i class="fas fa-box-open"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-green-700 bg-green-50 px-2 py-1 rounded mb-2 inline-block">下午</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">外帶輕食準備</div>
-                        <div class="text-sm text-gray-500">購買 笹壽司 或 熱壓三明治 在路上享用</div>
+                        <span class="text-xs font-bold text-green-700 bg-green-50 px-2 py-1 rounded mb-2 inline-block">14:10 下午</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">外帶輕食</div>
+                        <div class="text-sm text-gray-500">購買 笹壽司 或 熱壓三明治 備用</div>
                     </div>
                 </div>
 
@@ -624,24 +725,34 @@
                         <i class="fas fa-plane-arrival"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-cyan-700 bg-cyan-50 px-2 py-1 rounded mb-2 inline-block">17:10 - 18:25</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">搭機重返東京</div>
-                        <div class="text-sm text-gray-500">ANA 航空：小松 (KMQ) ✈️ 東京羽田 (HND)</div>
+                        <span class="text-xs font-bold text-cyan-700 bg-cyan-50 px-2 py-1 rounded mb-2 inline-block">交通與航班</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">從容流暢回東京</div>
+                        <div class="text-sm text-gray-500">14:25 搭乘巴士前往小松機場<br>17:10 ANA 航空飛往東京羽田 (HND)</div>
                     </div>
                 </div>
 
-                <!-- 核心動線卡片 -->
                 <div class="relative pl-8 md:pl-12">
                     <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-rose-200 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-rose-600 z-10 shadow-sm">
-                        <i class="fas fa-route"></i>
+                        <i class="fas fa-hotel"></i>
                     </div>
                     <div class="bg-rose-50 p-5 rounded-xl shadow-sm border border-rose-200 info-card">
-                        <span class="text-xs font-bold text-rose-800 bg-rose-200 px-2 py-1 rounded mb-2 inline-block">⚠️ 核心動線</span>
-                        <div class="font-bold text-rose-900 text-lg mb-2">優雅移動 & 車站補貨</div>
-                        <div class="space-y-2 text-sm text-rose-800">
-                            <p><strong>1. 入住放行李：</strong> 抵達東京後，先回入住 日本橋賽博酒店 (Hotel Saibo)，並在櫃檯領取 4/9 寄出的大行李。(人形町 3-3-16)</p>
-                            <p><strong>2. 輕裝出擊：</strong> 放下行李後，一身輕便前往東京車站 (一番街/Gransta) 補齊伴手禮。</p>
-                            <p><strong>3. 隨機晚餐：</strong> 買完重物後，直接在東京車站內享用晚餐。</p>
+                        <span class="text-xs font-bold text-rose-800 bg-rose-200 px-2 py-1 rounded mb-2 inline-block">19:30 晚上</span>
+                        <div class="font-bold text-rose-900 text-lg mb-1 flex items-center">入住 日本橋飯店 <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="text-sm text-rose-800">Check-in 並順利領取從淺草寄來的大行李</div>
+                    </div>
+                </div>
+
+                <!-- 超市補給卡片 -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-green-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-green-600 z-10 shadow-sm">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="bg-green-50 p-5 rounded-xl shadow-sm border border-green-200 info-card">
+                        <span class="text-xs font-bold text-green-800 bg-green-200 px-2 py-1 rounded mb-2 inline-block">🛒 20:30 最後一站</span>
+                        <div class="font-bold text-green-900 text-lg mb-1 flex items-center">超市補給 (成城石井日本橋店) <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="space-y-2 text-sm text-green-800 mt-2">
+                            <p><i class="fas fa-route mr-1 text-green-600"></i> <strong>動線：</strong> 位於日本橋飯店附近，24 小時營業的高品質進口超市。</p>
+                            <p><i class="fas fa-key mr-1 text-green-600"></i> <strong>關鍵：</strong> 今天移動距離大，利用 24 小時超市進行最後補給（飲料、起司、水果），體力保留 100%。</p>
                         </div>
                     </div>
                 </div>
@@ -652,7 +763,7 @@
         <!-- ================= 4/12 行程 ================= -->
         <div id="d-4-12" class="tab-content hidden animate-[fadeIn_0.3s_ease-in-out]">
             <div class="flex items-center justify-between mb-6">
-                <h2 class="text-2xl font-bold text-gray-800">4/12 (日) <span class="text-lg font-normal text-gray-500 ml-2">神樂坂慢活 & 上野大衝刺</span></h2>
+                <h2 class="text-2xl font-bold text-gray-800">4/12 (日) <span class="text-lg font-normal text-gray-500 ml-2">中目黑櫻吹雪 ➔ 代官山慢活儀式感</span></h2>
             </div>
             
             <div class="border-l-2 border-rose-200 ml-4 md:ml-8 space-y-8 py-2 mb-8">
@@ -662,42 +773,78 @@
                         <i class="fas fa-walking"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded mb-2 inline-block">10:30 上午</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">神樂坂慢活散步</div>
-                        <div class="text-sm text-gray-500">感受小巴黎的悠閒氛圍與日式風情</div>
+                        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded mb-2 inline-block">上午</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">神樂坂慵懶漫步</div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-cyan-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-cyan-600 z-10">
+                        <i class="fas fa-subway"></i>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
+                        <span class="text-xs font-bold text-cyan-700 bg-cyan-50 px-2 py-1 rounded mb-2 inline-block">移動</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">神樂坂 ➔ 中目黑站</div>
+                        <div class="text-sm text-gray-500">東西線轉日比谷線 (茅場町轉乘) 直達</div>
                     </div>
                 </div>
 
                 <div class="relative pl-8 md:pl-12">
                     <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-orange-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-orange-500 z-10">
-                        <i class="fas fa-utensils"></i>
+                        <i class="fas fa-fire"></i>
                     </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-orange-700 bg-orange-50 px-2 py-1 rounded mb-2 inline-block">12:00 午餐</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">Le Bretagne</div>
-                        <div class="text-sm text-gray-500">品嚐道地的法式蕎麥薄餅 (已列入預約清單)</div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card bg-orange-50/20">
+                        <span class="text-xs font-bold text-orange-700 bg-orange-50 px-2 py-1 rounded mb-2 inline-block">13:30 - 15:30 午餐</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1 flex items-center">Beef Kitchen 中目黑本店 <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="text-sm text-gray-500">⚠️ 已預約 / 全熟食 / 頂級燒肉與解鎖隱藏甜點</div>
                     </div>
                 </div>
 
                 <div class="relative pl-8 md:pl-12">
-                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-rose-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-rose-500 z-10">
-                        <i class="fas fa-shopping-cart"></i>
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-pink-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-pink-500 z-10">
+                        <i class="fab fa-pagelines"></i>
                     </div>
-                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card bg-rose-50/30">
-                        <span class="text-xs font-bold text-rose-700 bg-rose-50 px-2 py-1 rounded mb-2 inline-block">下午</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">上野阿美橫丁大衝刺</div>
-                        <div class="text-sm text-gray-500">集中火力採購藥妝與零食</div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
+                        <span class="text-xs font-bold text-pink-700 bg-pink-50 px-2 py-1 rounded mb-2 inline-block">16:00 - 18:30 下午</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1 flex items-center">目黑川散步 ➔ 代官山 <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="text-sm text-gray-500">欣賞目黑櫻吹雪/花筏，再散步至代官山 T-SITE (蔦屋書店)</div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-yellow-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-yellow-600 z-10">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
+                        <span class="text-xs font-bold text-yellow-700 bg-yellow-50 px-2 py-1 rounded mb-2 inline-block">甜點</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1 flex items-center">代官山 T-SITE Anjin <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="text-sm text-gray-500">在圖書館風格的咖啡廳解鎖甜點</div>
                     </div>
                 </div>
 
                 <div class="relative pl-8 md:pl-12">
                     <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-indigo-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-indigo-500 z-10">
-                        <i class="fas fa-store"></i>
+                        <i class="fas fa-wine-glass-alt"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
                         <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2 py-1 rounded mb-2 inline-block">晚餐</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">便利商店大餐</div>
-                        <div class="text-sm text-gray-500">採買結束後，輕鬆回飯店享用日系超商美食</div>
+                        <div class="font-bold text-gray-800 text-lg mb-1">代官山質感義式</div>
+                        <div class="text-sm text-gray-500">享用精緻的全熟食料理</div>
+                    </div>
+                </div>
+
+                <!-- 超市補給卡片 -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-green-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-green-600 z-10 shadow-sm">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="bg-green-50 p-5 rounded-xl shadow-sm border border-green-200 info-card">
+                        <span class="text-xs font-bold text-green-800 bg-green-200 px-2 py-1 rounded mb-2 inline-block">🛒 20:30 最後一站</span>
+                        <div class="font-bold text-green-900 text-lg mb-1">超市補給</div>
+                        <div class="space-y-2 text-sm text-green-800 mt-2">
+                            <p><i class="fas fa-map-marker-alt mr-1 text-green-600"></i>成城石井日本橋店 或 飯店附近 Maruetsu Petit。</p>
+                            <p><i class="fas fa-key mr-1 text-green-600"></i> <strong>關鍵：</strong> 今天兩手空空在代官山享受都會藝術，回飯店前補給草莓。體力保留！ <span class="text-yellow-500">🌟🌟🌟🌟🌟</span></p>
+                        </div>
                     </div>
                 </div>
 
@@ -707,63 +854,90 @@
         <!-- ================= 4/13 行程 ================= -->
         <div id="d-4-13" class="tab-content hidden animate-[fadeIn_0.3s_ease-in-out]">
             <div class="flex items-center justify-between mb-6">
-                <h2 class="text-2xl font-bold text-gray-800">4/13 (一) <span class="text-lg font-normal text-gray-500 ml-2">銀座百貨慢活 & 最終慶祝</span></h2>
+                <h2 class="text-2xl font-bold text-gray-800">4/13 (一) <span class="text-lg font-normal text-gray-500 ml-2">上野平日衝刺 ➔ 東京車站慶祝</span></h2>
             </div>
             
+            <div class="bg-blue-50 text-blue-800 p-3 rounded-lg text-sm font-medium mb-6 border border-blue-200 shadow-sm flex items-center">
+                <i class="fas fa-dumbbell text-blue-500 mr-2 text-lg"></i>
+                今天為「負重策略日」：上午完成大採購放回飯店，晚上輕裝前往東京車站最終慶祝！🌟🌟🌟🌟🌟
+            </div>
+
             <div class="border-l-2 border-rose-200 ml-4 md:ml-8 space-y-8 py-2 mb-8">
                 
                 <div class="relative pl-8 md:pl-12">
-                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-blue-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-blue-500 z-10">
-                        <i class="fas fa-bed"></i>
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-pink-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-pink-500 z-10">
+                        <i class="fab fa-pagelines"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded mb-2 inline-block">上午</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">自由休息</div>
-                        <div class="text-sm text-gray-500">不趕行程，睡飽養足精神</div>
+                        <span class="text-xs font-bold text-pink-700 bg-pink-50 px-2 py-1 rounded mb-2 inline-block">11:00 - 12:00</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">上野公園晚櫻巡禮</div>
+                        <div class="text-sm text-gray-500">欣賞美麗的八重櫻</div>
                     </div>
                 </div>
 
                 <div class="relative pl-8 md:pl-12">
                     <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-orange-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-orange-500 z-10">
-                        <i class="fas fa-utensils"></i>
+                        <i class="fas fa-hamburger"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-orange-700 bg-orange-50 px-2 py-1 rounded mb-2 inline-block">12:00 午餐</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">璧の穴 <span class="text-sm font-normal text-gray-400 mx-1">或</span> EATALY Ginza</div>
-                        <div class="text-sm text-gray-500">銀座隨機義式午餐 (不需預約)</div>
+                        <span class="text-xs font-bold text-orange-700 bg-orange-50 px-2 py-1 rounded mb-2 inline-block">11:00 午餐</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1 flex items-center">上野肉の大山 <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="text-sm text-gray-500">超人氣炸肉餅熟食 (不需預約)</div>
                     </div>
                 </div>
 
                 <div class="relative pl-8 md:pl-12">
-                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-rose-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-rose-500 z-10">
-                        <i class="fas fa-shopping-bag"></i>
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-blue-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-blue-500 z-10">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card bg-blue-50/10">
+                        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded mb-2 inline-block">12:00 - 15:00 採購</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1 flex items-center">上野阿美橫丁 <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="text-sm text-gray-500">OS Drug 火力全開！(⚠️ 藥妝只收現金)</div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-rose-200 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-rose-600 z-10">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <div class="bg-rose-50 p-5 rounded-xl shadow-sm border border-rose-200 info-card">
+                        <span class="text-xs font-bold text-rose-800 bg-rose-200 px-2 py-1 rounded mb-2 inline-block">15:30 極致慢活</span>
+                        <div class="font-bold text-rose-900 text-lg mb-1 flex items-center">地鐵回日本橋飯店 <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="text-sm text-rose-800">放下藥妝重物，稍作休息，準備晚上的優雅行程</div>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-cyan-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-cyan-600 z-10">
+                        <i class="fas fa-gift"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-rose-700 bg-rose-50 px-2 py-1 rounded mb-2 inline-block">下午</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">銀座百貨漫步 ➔ 東京車站</div>
-                        <div class="text-sm text-gray-500">逛三越/GSIX ➔ 前往東京車站快速補貨</div>
+                        <span class="text-xs font-bold text-cyan-700 bg-cyan-50 px-2 py-1 rounded mb-2 inline-block">16:30 傍晚</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">東京車站一番街 補貨</div>
+                        <div class="text-sm text-gray-500">NY Perfect Cheese、Press Butter Sand 伴手禮掃貨</div>
                     </div>
                 </div>
 
                 <div class="relative pl-8 md:pl-12">
                     <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-pink-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-pink-600 z-10">
-                        <i class="fas fa-coffee"></i>
+                        <i class="fas fa-ice-cream"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-pink-700 bg-pink-50 px-2 py-1 rounded mb-2 inline-block">下午茶</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">自由休息 伴隨 木村家麵包</div>
-                        <div class="text-sm text-gray-500">品嚐外帶的銀座木村家酒種麵包</div>
+                        <span class="text-xs font-bold text-pink-700 bg-pink-50 px-2 py-1 rounded mb-2 inline-block">甜點</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1 flex items-center">千疋屋 (東京車站店) <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="text-sm text-gray-500">享用傳說中的女王水果聖代</div>
                     </div>
                 </div>
 
                 <div class="relative pl-8 md:pl-12">
                     <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-indigo-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-indigo-500 z-10">
-                        <i class="fas fa-utensils"></i>
+                        <i class="fas fa-wine-glass-alt"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card bg-rose-50/20">
-                        <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2 py-1 rounded mb-2 inline-block">晚餐</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">利久牛舌 (Gransta 東京店)</div>
-                        <div class="text-sm text-gray-500">東京車站內享用美味牛舌 (不需預約)</div>
+                        <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2 py-1 rounded mb-2 inline-block">19:30 - 21:00 晚餐</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1 flex items-center">利久牛舌 (Gransta東京店) <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="text-sm text-gray-500">最終慶祝大餐 (全熟食)，不用預約</div>
                     </div>
                 </div>
 
@@ -772,9 +946,23 @@
                         <i class="fas fa-city"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-purple-100 info-card bg-purple-50/30">
-                        <span class="text-xs font-bold text-purple-700 bg-purple-100 px-2 py-1 rounded mb-2 inline-block">晚上景點</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">新丸大樓 7 樓 看夜景</div>
-                        <div class="text-sm text-gray-500">欣賞紅磚車站絕美點燈 (21:00 截止)</div>
+                        <span class="text-xs font-bold text-purple-700 bg-purple-100 px-2 py-1 rounded mb-2 inline-block">21:00 晚間景點</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1 flex items-center">新丸大樓露台 看夜景 <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="text-sm text-gray-500">欣賞紅磚車站絕美點燈 (至 21:00 截止)</div>
+                    </div>
+                </div>
+
+                <!-- 超市補給卡片 -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute left-[-1px] top-0 transform -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 bg-green-100 rounded-full border-4 border-[#faf6f5] flex items-center justify-center text-green-600 z-10 shadow-sm">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="bg-green-50 p-5 rounded-xl shadow-sm border border-green-200 info-card">
+                        <span class="text-xs font-bold text-green-800 bg-green-200 px-2 py-1 rounded mb-2 inline-block">🛒 21:30 最後一站</span>
+                        <div class="font-bold text-green-900 text-lg mb-1">超市補給 (成城石井日本橋店)</div>
+                        <div class="text-sm text-green-800 mt-2">
+                            <i class="fas fa-key mr-1 text-green-600"></i> <strong>關鍵：</strong> 今天已完成所有大採購，超市行程排在最後做完美收尾。
+                        </div>
                     </div>
                 </div>
 
@@ -784,7 +972,7 @@
         <!-- ================= 4/14 行程 ================= -->
         <div id="d-4-14" class="tab-content hidden animate-[fadeIn_0.3s_ease-in-out]">
             <div class="flex items-center justify-between mb-6">
-                <h2 class="text-2xl font-bold text-gray-800">4/14 (二) <span class="text-lg font-normal text-gray-500 ml-2">飯店早餐 & 從容返台</span></h2>
+                <h2 class="text-2xl font-bold text-gray-800">4/14 (二) <span class="text-lg font-normal text-gray-500 ml-2">從容返台</span></h2>
             </div>
             
             <div class="border-l-2 border-rose-200 ml-4 md:ml-8 space-y-8 py-2 mb-8">
@@ -794,8 +982,8 @@
                         <i class="fas fa-coffee"></i>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
-                        <span class="text-xs font-bold text-yellow-700 bg-yellow-50 px-2 py-1 rounded mb-2 inline-block">08:30 早餐</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">飯店早餐</div>
+                        <span class="text-xs font-bold text-yellow-700 bg-yellow-50 px-2 py-1 rounded mb-2 inline-block">早餐</span>
+                        <div class="font-bold text-gray-800 text-lg mb-1">Croissant 飯店早餐</div>
                         <div class="text-sm text-gray-500">悠閒享用最後的早餐</div>
                     </div>
                 </div>
@@ -806,8 +994,8 @@
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card">
                         <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded mb-2 inline-block">10:00 交通</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">出發前往機場</div>
-                        <div class="text-sm text-gray-500">從「日本橋站」搭乘都營淺草線 (直通京急線) 至羽田機場</div>
+                        <div class="font-bold text-gray-800 text-lg mb-1 flex items-center">出發前往機場 <span class="text-sm ml-2 text-yellow-500">🌟🌟🌟🌟🌟</span></div>
+                        <div class="text-sm text-gray-500">從「日本橋站」搭乘都營淺草線 (直通京急線) 輕鬆至羽田機場</div>
                     </div>
                 </div>
 
@@ -817,8 +1005,8 @@
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-sm border border-rose-50 info-card bg-cyan-50/20">
                         <span class="text-xs font-bold text-cyan-700 bg-cyan-50 px-2 py-1 rounded mb-2 inline-block">13:20 航班</span>
-                        <div class="font-bold text-gray-800 text-lg mb-1">搭機回台</div>
-                        <div class="text-sm text-gray-500">ANA 航空：東京羽田 (HND) ✈️ 台北松山 (TSA)，滿載美好回憶賦歸</div>
+                        <div class="font-bold text-gray-800 text-lg mb-1">飛返家園</div>
+                        <div class="text-sm text-gray-500">ANA 航空：東京羽田 (HND) ✈️ 台北松山 (TSA)，滿載優雅回憶賦歸</div>
                     </div>
                 </div>
 
@@ -830,29 +1018,24 @@
     <!-- Script for Tab Switching -->
     <script>
         function switchTab(tabId) {
-            // Hide all tab contents
             document.querySelectorAll('.tab-content').forEach(el => {
                 el.classList.add('hidden');
                 el.classList.remove('block');
             });
             
-            // Reset all tab buttons styling
             document.querySelectorAll('.tab-btn').forEach(el => {
                 el.classList.remove('bg-rose-main', 'text-white', 'shadow-md', 'active');
                 el.classList.add('bg-white', 'text-peach-500', 'border', 'border-peach-200', 'shadow-sm');
             });
             
-            // Show selected tab content
             const contentEl = document.getElementById(tabId);
             contentEl.classList.remove('hidden');
             contentEl.classList.add('block');
             
-            // Highlight selected tab button
             const btnEl = document.getElementById('btn-' + tabId);
             btnEl.classList.remove('bg-white', 'text-peach-500', 'border', 'border-peach-200', 'shadow-sm');
             btnEl.classList.add('bg-rose-main', 'text-white', 'shadow-md', 'active');
 
-            // Scroll to top
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
@@ -861,28 +1044,22 @@
             const petal = document.createElement('div');
             petal.classList.add('sakura-petal');
             
-            // 隨機大小 (8px ~ 16px)
             const size = Math.random() * 8 + 8;
             petal.style.width = `${size}px`;
             petal.style.height = `${size}px`;
             
-            // 隨機起始水平位置 (-10vw ~ 100vw，讓畫面邊緣也有飄落感)
             petal.style.left = `${Math.random() * 110 - 10}vw`;
             
-            // 隨機掉落時間 (6s ~ 11s)
             const duration = Math.random() * 5 + 6;
             petal.style.animationDuration = `${duration}s`;
             
-            // 隨機動畫延遲，才不會所有花瓣同時掉落
             petal.style.animationDelay = `${Math.random() * 8}s`;
             
-            // 隨機初始透明度
             petal.style.opacity = Math.random() * 0.5 + 0.3;
             
             document.body.appendChild(petal);
         }
 
-        // 初始化產生 35 片飄落的櫻花
         window.addEventListener('DOMContentLoaded', () => {
             for (let i = 0; i < 35; i++) {
                 createSakura();
